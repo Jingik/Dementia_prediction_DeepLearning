@@ -104,13 +104,13 @@
 
 ## 📌 5. 수행 결과
 > 
-**Case 1. (Resnet+Vae_Latenet) + (Randomforest + PCA) + Processed Data **
+**Case 1. (Resnet+Vae_Latenet) + (Randomforest + PCA) + Processed Data**
 
 ![](https://velog.velcdn.com/images/jingit/post/8ced79fe-d09a-4be3-9178-d61d915beee6/image.png)
 
 
-> 
-**Case 2. Vae_Latenet + (Randomforest + PCA) + Processed Data **
+>
+**Case 2. Vae_Latenet + (Randomforest + PCA) + Processed Data**
 
 ![](https://velog.velcdn.com/images/jingit/post/3f252ff4-e5ce-4d41-8d51-573a77ef4ec1/image.png)
 
