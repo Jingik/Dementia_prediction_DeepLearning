@@ -31,29 +31,29 @@
 
 ## 📔 2. 프로젝트 수행기간
 
-**2023/04/01 ~ 2023/06/21**
+![](https://velog.velcdn.com/images/jingit/post/ae7381df-c3dc-4ecb-8d26-c9ef0b8de038/image.png)
 
-나중에 추가
-
+[Github 주소]<https://github.com/Jingik/Dementia_prediction_DeepLearning.git>
 <br>
 
 ## 📌 3. 프로젝트 흐름도
-![](https://velog.velcdn.com/images/jingit/post/249e34a6-01e8-4ddf-97de-381d0f7782c4/image.png)
-나중에 추가
+![](https://velog.velcdn.com/images/jingit/post/77e768cd-bc7e-4b29-af16-412cbc076254/image.png)
+
+
 <br>
 
 ## 📌 4. 프로젝트 수행과정
 ### 1) 전처리 단계 : 결측치 처리
+![](https://velog.velcdn.com/images/jingit/post/e13059f7-915d-4212-8641-cdd4a91a6479/image.png)
 
-![](https://velog.velcdn.com/images/jingit/post/198c1a64-edb4-48ca-ad2d-eba47fc929dc/image.png)
 
 - 결측치 처리
 - 사용하지 않는 변수 삭제
 
 
 ### 2) 전처리 단계 : 데이터 스케일링
+![](https://velog.velcdn.com/images/jingit/post/65945fd7-c078-44b7-b29c-505613192971/image.png)
 
-![](https://velog.velcdn.com/images/jingit/post/a622ee0c-dfe5-43f0-b2ab-c3e9b31838db/image.png)
 
 - 좌측 편향 데이터 - ** Log Transform **
 - 우측 편향 데이터 - ** Quantile Transform**
@@ -74,43 +74,47 @@
 - 공공 데이터로 제공받은 시계열 데이터를 그래프 형태로 변형
 
 #### 2. 임의의 Resnet + VAE 모델을 이용해 변수 생성
+![](https://velog.velcdn.com/images/jingit/post/a9734971-d98c-4a8c-b9e1-aae3238f9e47/image.png)
 
-![](https://velog.velcdn.com/images/jingit/post/2e18aba2-d0ce-4d39-825a-4c0047630991/image.png)
 
 - AutoEncoder의 특징인 압축과 풀기 과정에서 생성되는 Latent Vector 데이터 활용
 
 #### 3. VAE 모델을 이용한 변수 생성
-![](https://velog.velcdn.com/images/jingit/post/5d0fa508-cb13-470b-83a7-c31b1117ec17/image.png)
+![](https://velog.velcdn.com/images/jingit/post/6e2a461d-63f3-46f6-8acf-2f8930269cc9/image.png)
+
 
 - AutoEncoder의 특징인 압축과 풀기 과정에서 생성되는 Latent Vector 데이터 활용
 
 ### 3) 딥러닝 모델 구현
 #### 1. LSTM 앙상블 모델 구현
 
-![](https://velog.velcdn.com/images/jingit/post/ae95065b-981a-4395-8de8-106fab0d5402/image.png)
+![](https://velog.velcdn.com/images/jingit/post/c0e310f9-5a26-448b-a0b8-627fcf4cf909/image.png)
+
 
 - Keras를 이용해 Model 구현
 
 #### 2.CNN + LSTM 모델 구현
-![](https://velog.velcdn.com/images/jingit/post/3ee6ad81-95c1-47df-afe4-f3efdb06e1cb/image.png)
+![](https://velog.velcdn.com/images/jingit/post/ab0e8599-3937-42c2-b3cc-0a0694a4cb9e/image.png)
+
 
 - Keras를 이용해 Model 구현
 
 #### 3. ResNet 모델 구현
-![](https://velog.velcdn.com/images/jingit/post/42c25e15-cd02-402b-a55b-08da184c97bc/image.png)
+![](https://velog.velcdn.com/images/jingit/post/5ea9a3db-aa09-4d18-8e54-442554094c27/image.png)
+
 
 - Keras를 이용해 Model 구현
 
 
 ## 📌 5. 수행 결과
 > 
-**Case 1. (Resnet+Vae_Latenet) + (Randomforest + PCA) + Processed Data**
+**Case 1. (Resnet+Vae_Latenet) + (Randomforest + PCA) + Processed Data **
 
 ![](https://velog.velcdn.com/images/jingit/post/8ced79fe-d09a-4be3-9178-d61d915beee6/image.png)
 
 
->
-**Case 2. Vae_Latenet + (Randomforest + PCA) + Processed Data**
+> 
+**Case 2. Vae_Latenet + (Randomforest + PCA) + Processed Data **
 
 ![](https://velog.velcdn.com/images/jingit/post/3f252ff4-e5ce-4d41-8d51-573a77ef4ec1/image.png)
 
